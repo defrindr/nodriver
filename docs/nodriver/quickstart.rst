@@ -52,11 +52,11 @@ More complete example
 
 .. code-block::
 
-    import nodriver
+    import nodriver as uc
 
     async def main():
 
-        browser = await nodriver.start()
+        browser = await uc.start()
         page = await browser.get('https://www.nowsecure.nl')
 
         await page.save_screenshot()
